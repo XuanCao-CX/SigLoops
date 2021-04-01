@@ -13,9 +13,15 @@ Usage
     SigLoops usage: HiC loop calling first step: map pets to fragment space.
          -i          The input pets file dir.Pets file name format:"chr1.vs.chr2.pets".
                      Pets format:chr1, pos1, chr2, pos2.
-         -f          The REsite fragment bed file.
+         -f          The restriction enzyme fragment bed file.
          -o          The output dir.
          -c          The chromosome list file path to select to process chrs.
          -w          The fragment to make window. Default: 50.
          -s          The step fragment of window.Default:5.
          -p          The cpu used. Default:1. Warning: no more than5!
+
+
+Run steps
+----
+SigLoops.py -i input_pets_dir -f enzyme_site_bed -o output -c chr_list -w 50 -s 50 -p 2
+
