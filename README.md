@@ -23,5 +23,11 @@ Usage
 
 Run steps
 ----
-SigLoops.py -i input_pets_dir -f enzyme_site_bed -o output -c chr_list -w 50 -s 50 -p 2
+#step 1：calling all loops.
+SigLoops.py -i input_pets_dir  -f enzyme_site_bed  -o output_dir  -c chr_list  -w 50  -s 50  -p 2
+
+#step 2: getting the candidate loops
+Rscript GetSignificantLoops.R loop.txt out.pdf out_candiated_loop.txt pvalue
+	loop.txt file is contained in the step 1 output_dir
+
 
