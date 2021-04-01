@@ -1,6 +1,6 @@
 #!/usr/bin/Rscript
-##Rscript ~/script/hictools/1_select_loop.R  infile outpdf outsigloop pvalues_cut
-##Rscript ~/script/hictools/1_select_loop.R loop.ihep2d_1_2.txt loop.ihep2d_1_2.pdf loop.ihep2d_1_2.sig_p0.01.txt 0.01
+##Rscript GetSignificantLoops.R  infile outpdf outsigloop pvalues_cut
+##Rscript GetSignificantLoops.R loop.ihep2d_1_2.txt loop.ihep2d_1_2.pdf loop.ihep2d_1_2.sig_p0.01.txt 0.01
 
 
 argv<-commandArgs(TRUE)
