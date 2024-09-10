@@ -9,6 +9,7 @@ import getopt
 from joblib import Parallel, delayed
 from datetime import datetime
 
+
 def read_chr_list(chr_list_file):
     chrs=[]
     f = open(chr_list_file)
